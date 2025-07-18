@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming Consoles Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; background: #181818; color: #fff; margin: 0; }
+        header { background: #222; padding: 20px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        nav { background: #333; padding: 10px 0; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .console-list { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        .console-card {
+            background: #242424;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .console-card img { width: 100%; border-radius: 8px; }
+        .console-card h2 { margin: 15px 0 10px; }
+        .console-card p { color: #ccc; }
+        footer { background: #222; text-align: center; padding: 15px 0; margin-top: 40px; }
+        @media (max-width: 700px) {
+            .console-list { flex-direction: column; align-items: center; }
+            .console-card { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming Consoles Hub</h1>
+        <p>Your source for the latest gaming consoles</p>
+    </header>
+    <nav>
+        <a href="#playstation">PlayStation</a>
+        <a href="#xbox">Xbox</a>
+        <a href="#nintendo">Nintendo</a>
+    </nav>
+    <div class="container">
+        <div class="console-list">
+            <div class="console-card" id="playstation">
+                <img src="ps5.jpg" alt="PlayStation 5">
+                <h2>PlayStation 5</h2>
+                <p>The latest Sony console with ultra-fast SSD, ray tracing, and immersive gaming experiences.</p>
+            </div>
+            <div class="console-card" id="xbox">
+                <img src="xbox-x-feature.webp" alt="Xbox Series X">
+                <h2>Xbox Series X</h2>
+                <p>Microsoft's most powerful console, featuring 4K gaming, fast load times, and Game Pass support.</p>
+            </div>
+            <div class="console-card" id="nintendo">
+                <img src="nintendo-switch2_TA.webp" alt="Nintendo Switch">
+                <h2>Nintendo Switch</h2>
+                <p>Hybrid console for both handheld and TV gaming, with a vast library of exclusive Nintendo titles.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Gaming Consoles Hub. All rights reserved.
+    </footer>
+</body>
+</html>
